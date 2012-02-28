@@ -1,0 +1,6 @@
+[submodule "external/ZDS_Shared"]
+	path = external/ZDS_Shared
+	url = git@github.com:carlbrown/ZDS_Shared.git
+[submodule "external/AQGridView"]
+	path = external/AQGridView
+	url = git@github.com:carlbrown/AQGridView.git
