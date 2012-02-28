@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D387A84F14FD93F800C87719 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A84E14FD93F800C87719 /* UIKit.framework */; };
+		D387A85114FD93F800C87719 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A85014FD93F800C87719 /* Foundation.framework */; };
+		D387A85314FD93F800C87719 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A85214FD93F800C87719 /* CoreGraphics.framework */; };
+		D387A85514FD93F800C87719 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A85414FD93F800C87719 /* CoreData.framework */; };
+		D387A85B14FD93F800C87719 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D387A85914FD93F800C87719 /* InfoPlist.strings */; };
+		D387A85D14FD93F800C87719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D387A85C14FD93F800C87719 /* main.m */; };
+		D387A86114FD93F800C87719 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D387A86014FD93F800C87719 /* AppDelegate.m */; };
+		D387A86414FD93F800C87719 /* ExpBkOffTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D387A86214FD93F800C87719 /* ExpBkOffTest.xcdatamodeld */; };
+		D387A86714FD93F800C87719 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D387A86614FD93F800C87719 /* MasterViewController.m */; };
+		D387A86A14FD93F800C87719 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D387A86914FD93F800C87719 /* DetailViewController.m */; };
+		D387A86D14FD93F800C87719 /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D387A86B14FD93F800C87719 /* MasterViewController_iPhone.xib */; };
+		D387A87014FD93F800C87719 /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D387A86E14FD93F800C87719 /* MasterViewController_iPad.xib */; };
+		D387A87314FD93F800C87719 /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D387A87114FD93F800C87719 /* DetailViewController_iPhone.xib */; };
+		D387A87614FD93F800C87719 /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D387A87414FD93F800C87719 /* DetailViewController_iPad.xib */; };
+		D387A87E14FD93F800C87719 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A87D14FD93F800C87719 /* SenTestingKit.framework */; };
+		D387A87F14FD93F800C87719 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A84E14FD93F800C87719 /* UIKit.framework */; };
+		D387A88014FD93F800C87719 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A85014FD93F800C87719 /* Foundation.framework */; };
+		D387A88114FD93F800C87719 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A85414FD93F800C87719 /* CoreData.framework */; };
+		D387A88914FD93F800C87719 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D387A88714FD93F800C87719 /* InfoPlist.strings */; };
+		D387A88C14FD93F800C87719 /* ExpBkOffTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D387A88214FD93F800C87719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D387A84114FD93F700C87719 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D387A84914FD93F800C87719;
+			remoteInfo = ExpBkOffTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D387A84A14FD93F800C87719 /* ExpBkOffTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpBkOffTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D387A84E14FD93F800C87719 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D387A85014FD93F800C87719 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D387A85214FD93F800C87719 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D387A85414FD93F800C87719 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D387A85814FD93F800C87719 /* ExpBkOffTest-Info.plist */ = {isa = PBXFileReference; path = "ExpBkOffTest-Info.plist"; sourceTree = "<group>"; };
+		D387A85A14FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D387A85C14FD93F800C87719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D387A85E14FD93F800C87719 /* ExpBkOffTest-Prefix.pch */ = {isa = PBXFileReference; path = "ExpBkOffTest-Prefix.pch"; sourceTree = "<group>"; };
+		D387A85F14FD93F800C87719 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D387A86014FD93F800C87719 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D387A86314FD93F800C87719 /* ExpBkOffTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExpBkOffTest.xcdatamodel; sourceTree = "<group>"; };
+		D387A86514FD93F800C87719 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		D387A86614FD93F800C87719 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		D387A86814FD93F800C87719 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		D387A86914FD93F800C87719 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D387A86C14FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		D387A86F14FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
+		D387A87214FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		D387A87514FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
+		D387A87C14FD93F800C87719 /* ExpBkOffTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpBkOffTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D387A87D14FD93F800C87719 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D387A88614FD93F800C87719 /* ExpBkOffTestTests-Info.plist */ = {isa = PBXFileReference; path = "ExpBkOffTestTests-Info.plist"; sourceTree = "<group>"; };
+		D387A88814FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D387A88A14FD93F800C87719 /* ExpBkOffTestTests.h */ = {isa = PBXFileReference; path = ExpBkOffTestTests.h; sourceTree = "<group>"; };
+		D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpBkOffTestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D387A84714FD93F800C87719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D387A84F14FD93F800C87719 /* UIKit.framework in Frameworks */,
+				D387A85114FD93F800C87719 /* Foundation.framework in Frameworks */,
+				D387A85314FD93F800C87719 /* CoreGraphics.framework in Frameworks */,
+				D387A85514FD93F800C87719 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D387A87814FD93F800C87719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D387A87E14FD93F800C87719 /* SenTestingKit.framework in Frameworks */,
+				D387A87F14FD93F800C87719 /* UIKit.framework in Frameworks */,
+				D387A88014FD93F800C87719 /* Foundation.framework in Frameworks */,
+				D387A88114FD93F800C87719 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D387A83F14FD93F700C87719 = {
+			isa = PBXGroup;
+			children = (
+				D387A85614FD93F800C87719 /* ExpBkOffTest */,
+				D387A88414FD93F800C87719 /* ExpBkOffTestTests */,
+				D387A84D14FD93F800C87719 /* Frameworks */,
+				D387A84B14FD93F800C87719 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D387A84B14FD93F800C87719 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D387A84A14FD93F800C87719 /* ExpBkOffTest.app */,
+				D387A87C14FD93F800C87719 /* ExpBkOffTestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D387A84D14FD93F800C87719 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D387A84E14FD93F800C87719 /* UIKit.framework */,
+				D387A85014FD93F800C87719 /* Foundation.framework */,
+				D387A85214FD93F800C87719 /* CoreGraphics.framework */,
+				D387A85414FD93F800C87719 /* CoreData.framework */,
+				D387A87D14FD93F800C87719 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D387A85614FD93F800C87719 /* ExpBkOffTest */ = {
+			isa = PBXGroup;
+			children = (
+				D387A85F14FD93F800C87719 /* AppDelegate.h */,
+				D387A86014FD93F800C87719 /* AppDelegate.m */,
+				D387A86514FD93F800C87719 /* MasterViewController.h */,
+				D387A86614FD93F800C87719 /* MasterViewController.m */,
+				D387A86814FD93F800C87719 /* DetailViewController.h */,
+				D387A86914FD93F800C87719 /* DetailViewController.m */,
+				D387A86B14FD93F800C87719 /* MasterViewController_iPhone.xib */,
+				D387A86E14FD93F800C87719 /* MasterViewController_iPad.xib */,
+				D387A87114FD93F800C87719 /* DetailViewController_iPhone.xib */,
+				D387A87414FD93F800C87719 /* DetailViewController_iPad.xib */,
+				D387A86214FD93F800C87719 /* ExpBkOffTest.xcdatamodeld */,
+				D387A85714FD93F800C87719 /* Supporting Files */,
+			);
+			path = ExpBkOffTest;
+			sourceTree = "<group>";
+		};
+		D387A85714FD93F800C87719 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D387A85814FD93F800C87719 /* ExpBkOffTest-Info.plist */,
+				D387A85914FD93F800C87719 /* InfoPlist.strings */,
+				D387A85C14FD93F800C87719 /* main.m */,
+				D387A85E14FD93F800C87719 /* ExpBkOffTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D387A88414FD93F800C87719 /* ExpBkOffTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				D387A88A14FD93F800C87719 /* ExpBkOffTestTests.h */,
+				D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */,
+				D387A88514FD93F800C87719 /* Supporting Files */,
+			);
+			path = ExpBkOffTestTests;
+			sourceTree = "<group>";
+		};
+		D387A88514FD93F800C87719 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D387A88614FD93F800C87719 /* ExpBkOffTestTests-Info.plist */,
+				D387A88714FD93F800C87719 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D387A84914FD93F800C87719 /* ExpBkOffTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D387A88F14FD93F800C87719 /* Build configuration list for PBXNativeTarget "ExpBkOffTest" */;
+			buildPhases = (
+				D387A84614FD93F800C87719 /* Sources */,
+				D387A84714FD93F800C87719 /* Frameworks */,
+				D387A84814FD93F800C87719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpBkOffTest;
+			productName = ExpBkOffTest;
+			productReference = D387A84A14FD93F800C87719 /* ExpBkOffTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D387A87B14FD93F800C87719 /* ExpBkOffTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D387A89214FD93F800C87719 /* Build configuration list for PBXNativeTarget "ExpBkOffTestTests" */;
+			buildPhases = (
+				D387A87714FD93F800C87719 /* Sources */,
+				D387A87814FD93F800C87719 /* Frameworks */,
+				D387A87914FD93F800C87719 /* Resources */,
+				D387A87A14FD93F800C87719 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D387A88314FD93F800C87719 /* PBXTargetDependency */,
+			);
+			name = ExpBkOffTestTests;
+			productName = ExpBkOffTestTests;
+			productReference = D387A87C14FD93F800C87719 /* ExpBkOffTestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D387A84114FD93F700C87719 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "PDAgent, LLC";
+			};
+			buildConfigurationList = D387A84414FD93F700C87719 /* Build configuration list for PBXProject "ExpBkOffTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D387A83F14FD93F700C87719;
+			productRefGroup = D387A84B14FD93F800C87719 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D387A84914FD93F800C87719 /* ExpBkOffTest */,
+				D387A87B14FD93F800C87719 /* ExpBkOffTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D387A84814FD93F800C87719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D387A85B14FD93F800C87719 /* InfoPlist.strings in Resources */,
+				D387A86D14FD93F800C87719 /* MasterViewController_iPhone.xib in Resources */,
+				D387A87014FD93F800C87719 /* MasterViewController_iPad.xib in Resources */,
+				D387A87314FD93F800C87719 /* DetailViewController_iPhone.xib in Resources */,
+				D387A87614FD93F800C87719 /* DetailViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D387A87914FD93F800C87719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D387A88914FD93F800C87719 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D387A87A14FD93F800C87719 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D387A84614FD93F800C87719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D387A85D14FD93F800C87719 /* main.m in Sources */,
+				D387A86114FD93F800C87719 /* AppDelegate.m in Sources */,
+				D387A86414FD93F800C87719 /* ExpBkOffTest.xcdatamodeld in Sources */,
+				D387A86714FD93F800C87719 /* MasterViewController.m in Sources */,
+				D387A86A14FD93F800C87719 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D387A87714FD93F800C87719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D387A88C14FD93F800C87719 /* ExpBkOffTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D387A88314FD93F800C87719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D387A84914FD93F800C87719 /* ExpBkOffTest */;
+			targetProxy = D387A88214FD93F800C87719 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D387A85914FD93F800C87719 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D387A85A14FD93F800C87719 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D387A86B14FD93F800C87719 /* MasterViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D387A86C14FD93F800C87719 /* en */,
+			);
+			name = MasterViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		D387A86E14FD93F800C87719 /* MasterViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D387A86F14FD93F800C87719 /* en */,
+			);
+			name = MasterViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		D387A87114FD93F800C87719 /* DetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D387A87214FD93F800C87719 /* en */,
+			);
+			name = DetailViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		D387A87414FD93F800C87719 /* DetailViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D387A87514FD93F800C87719 /* en */,
+			);
+			name = DetailViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		D387A88714FD93F800C87719 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D387A88814FD93F800C87719 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D387A88D14FD93F800C87719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D387A88E14FD93F800C87719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D387A89014FD93F800C87719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExpBkOffTest/ExpBkOffTest-Prefix.pch";
+				INFOPLIST_FILE = "ExpBkOffTest/ExpBkOffTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D387A89114FD93F800C87719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExpBkOffTest/ExpBkOffTest-Prefix.pch";
+				INFOPLIST_FILE = "ExpBkOffTest/ExpBkOffTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D387A89314FD93F800C87719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExpBkOffTest.app/ExpBkOffTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExpBkOffTest/ExpBkOffTest-Prefix.pch";
+				INFOPLIST_FILE = "ExpBkOffTestTests/ExpBkOffTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D387A89414FD93F800C87719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExpBkOffTest.app/ExpBkOffTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExpBkOffTest/ExpBkOffTest-Prefix.pch";
+				INFOPLIST_FILE = "ExpBkOffTestTests/ExpBkOffTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D387A84414FD93F700C87719 /* Build configuration list for PBXProject "ExpBkOffTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D387A88D14FD93F800C87719 /* Debug */,
+				D387A88E14FD93F800C87719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D387A88F14FD93F800C87719 /* Build configuration list for PBXNativeTarget "ExpBkOffTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D387A89014FD93F800C87719 /* Debug */,
+				D387A89114FD93F800C87719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D387A89214FD93F800C87719 /* Build configuration list for PBXNativeTarget "ExpBkOffTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D387A89314FD93F800C87719 /* Debug */,
+				D387A89414FD93F800C87719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D387A86214FD93F800C87719 /* ExpBkOffTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D387A86314FD93F800C87719 /* ExpBkOffTest.xcdatamodel */,
+			);
+			currentVersion = D387A86314FD93F800C87719 /* ExpBkOffTest.xcdatamodel */;
+			path = ExpBkOffTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D387A84114FD93F700C87719 /* Project object */;
+}
