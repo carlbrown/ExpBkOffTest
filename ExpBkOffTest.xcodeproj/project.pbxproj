@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D37EB71E150135CB00682DBD /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB708150135CB00682DBD /* AQGridView.m */; };
+		D37EB71F150135CB00682DBD /* AQGridViewAnimatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB70C150135CB00682DBD /* AQGridViewAnimatorItem.m */; };
+		D37EB720150135CB00682DBD /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB70E150135CB00682DBD /* AQGridViewCell.m */; };
+		D37EB721150135CB00682DBD /* AQGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB711150135CB00682DBD /* AQGridViewController.m */; };
+		D37EB722150135CB00682DBD /* AQGridViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB713150135CB00682DBD /* AQGridViewData.m */; };
+		D37EB723150135CB00682DBD /* AQGridViewUpdateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB715150135CB00682DBD /* AQGridViewUpdateInfo.m */; };
+		D37EB724150135CB00682DBD /* AQGridViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB717150135CB00682DBD /* AQGridViewUpdateItem.m */; };
+		D37EB725150135CB00682DBD /* NSIndexSet+AQIndexesOutsideSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB719150135CB00682DBD /* NSIndexSet+AQIndexesOutsideSet.m */; };
+		D37EB726150135CB00682DBD /* NSIndexSet+AQIsSetContiguous.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB71B150135CB00682DBD /* NSIndexSet+AQIsSetContiguous.m */; };
+		D37EB727150135CB00682DBD /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB71D150135CB00682DBD /* UIColor+AQGridView.m */; };
+		D37EB7361501361200682DBD /* NSData+ZSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB7291501361200682DBD /* NSData+ZSAdditions.m */; };
+		D37EB7371501361200682DBD /* NSString+ZSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB72B1501361200682DBD /* NSString+ZSAdditions.m */; };
+		D37EB7381501361200682DBD /* ZDSStreamJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB72D1501361200682DBD /* ZDSStreamJSONParser.m */; };
+		D37EB7391501361200682DBD /* ZSAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB72F1501361200682DBD /* ZSAssetManager.m */; };
+		D37EB73A1501361200682DBD /* ZSContextWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB7311501361200682DBD /* ZSContextWatcher.m */; };
+		D37EB73B1501361200682DBD /* ZSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB7331501361200682DBD /* ZSReachability.m */; };
+		D37EB73C1501361200682DBD /* ZSURLConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB7351501361200682DBD /* ZSURLConnectionDelegate.m */; };
+		D37EB7491501373D00682DBD /* libYAJLiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D37EB73F1501373D00682DBD /* libYAJLiOS.a */; };
+		D37EB74F1501378900682DBD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37EB74E1501378900682DBD /* SystemConfiguration.framework */; };
+		D37EB751150137CB00682DBD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37EB750150137CB00682DBD /* QuartzCore.framework */; };
 		D387A84F14FD93F800C87719 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A84E14FD93F800C87719 /* UIKit.framework */; };
 		D387A85114FD93F800C87719 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A85014FD93F800C87719 /* Foundation.framework */; };
 		D387A85314FD93F800C87719 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A85214FD93F800C87719 /* CoreGraphics.framework */; };
@@ -40,21 +60,71 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D37EB707150135CB00682DBD /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridView.h; path = external/AQGridView/Classes/AQGridView.h; sourceTree = "<group>"; };
+		D37EB708150135CB00682DBD /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQGridView.m; path = external/AQGridView/Classes/AQGridView.m; sourceTree = "<group>"; };
+		D37EB709150135CB00682DBD /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AQGridView+CellLayout.h"; path = "external/AQGridView/Classes/AQGridView+CellLayout.h"; sourceTree = "<group>"; };
+		D37EB70A150135CB00682DBD /* AQGridView+CellLocationDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AQGridView+CellLocationDelegation.h"; path = "external/AQGridView/Classes/AQGridView+CellLocationDelegation.h"; sourceTree = "<group>"; };
+		D37EB70B150135CB00682DBD /* AQGridViewAnimatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridViewAnimatorItem.h; path = external/AQGridView/Classes/AQGridViewAnimatorItem.h; sourceTree = "<group>"; };
+		D37EB70C150135CB00682DBD /* AQGridViewAnimatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQGridViewAnimatorItem.m; path = external/AQGridView/Classes/AQGridViewAnimatorItem.m; sourceTree = "<group>"; };
+		D37EB70D150135CB00682DBD /* AQGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridViewCell.h; path = external/AQGridView/Classes/AQGridViewCell.h; sourceTree = "<group>"; };
+		D37EB70E150135CB00682DBD /* AQGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQGridViewCell.m; path = external/AQGridView/Classes/AQGridViewCell.m; sourceTree = "<group>"; };
+		D37EB70F150135CB00682DBD /* AQGridViewCell+AQGridViewCellPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AQGridViewCell+AQGridViewCellPrivate.h"; path = "external/AQGridView/Classes/AQGridViewCell+AQGridViewCellPrivate.h"; sourceTree = "<group>"; };
+		D37EB710150135CB00682DBD /* AQGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridViewController.h; path = external/AQGridView/Classes/AQGridViewController.h; sourceTree = "<group>"; };
+		D37EB711150135CB00682DBD /* AQGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQGridViewController.m; path = external/AQGridView/Classes/AQGridViewController.m; sourceTree = "<group>"; };
+		D37EB712150135CB00682DBD /* AQGridViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridViewData.h; path = external/AQGridView/Classes/AQGridViewData.h; sourceTree = "<group>"; };
+		D37EB713150135CB00682DBD /* AQGridViewData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQGridViewData.m; path = external/AQGridView/Classes/AQGridViewData.m; sourceTree = "<group>"; };
+		D37EB714150135CB00682DBD /* AQGridViewUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridViewUpdateInfo.h; path = external/AQGridView/Classes/AQGridViewUpdateInfo.h; sourceTree = "<group>"; };
+		D37EB715150135CB00682DBD /* AQGridViewUpdateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQGridViewUpdateInfo.m; path = external/AQGridView/Classes/AQGridViewUpdateInfo.m; sourceTree = "<group>"; };
+		D37EB716150135CB00682DBD /* AQGridViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridViewUpdateItem.h; path = external/AQGridView/Classes/AQGridViewUpdateItem.h; sourceTree = "<group>"; };
+		D37EB717150135CB00682DBD /* AQGridViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQGridViewUpdateItem.m; path = external/AQGridView/Classes/AQGridViewUpdateItem.m; sourceTree = "<group>"; };
+		D37EB718150135CB00682DBD /* NSIndexSet+AQIndexesOutsideSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+AQIndexesOutsideSet.h"; path = "external/AQGridView/Classes/NSIndexSet+AQIndexesOutsideSet.h"; sourceTree = "<group>"; };
+		D37EB719150135CB00682DBD /* NSIndexSet+AQIndexesOutsideSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSIndexSet+AQIndexesOutsideSet.m"; path = "external/AQGridView/Classes/NSIndexSet+AQIndexesOutsideSet.m"; sourceTree = "<group>"; };
+		D37EB71A150135CB00682DBD /* NSIndexSet+AQIsSetContiguous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSIndexSet+AQIsSetContiguous.h"; path = "external/AQGridView/Classes/NSIndexSet+AQIsSetContiguous.h"; sourceTree = "<group>"; };
+		D37EB71B150135CB00682DBD /* NSIndexSet+AQIsSetContiguous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSIndexSet+AQIsSetContiguous.m"; path = "external/AQGridView/Classes/NSIndexSet+AQIsSetContiguous.m"; sourceTree = "<group>"; };
+		D37EB71C150135CB00682DBD /* UIColor+AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+AQGridView.h"; path = "external/AQGridView/Classes/UIColor+AQGridView.h"; sourceTree = "<group>"; };
+		D37EB71D150135CB00682DBD /* UIColor+AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+AQGridView.m"; path = "external/AQGridView/Classes/UIColor+AQGridView.m"; sourceTree = "<group>"; };
+		D37EB7281501361200682DBD /* NSData+ZSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+ZSAdditions.h"; path = "external/ZDS_Shared/NSData+ZSAdditions.h"; sourceTree = "<group>"; };
+		D37EB7291501361200682DBD /* NSData+ZSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ZSAdditions.m"; path = "external/ZDS_Shared/NSData+ZSAdditions.m"; sourceTree = "<group>"; };
+		D37EB72A1501361200682DBD /* NSString+ZSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ZSAdditions.h"; path = "external/ZDS_Shared/NSString+ZSAdditions.h"; sourceTree = "<group>"; };
+		D37EB72B1501361200682DBD /* NSString+ZSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ZSAdditions.m"; path = "external/ZDS_Shared/NSString+ZSAdditions.m"; sourceTree = "<group>"; };
+		D37EB72C1501361200682DBD /* ZDSStreamJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZDSStreamJSONParser.h; path = external/ZDS_Shared/ZDSStreamJSONParser.h; sourceTree = "<group>"; };
+		D37EB72D1501361200682DBD /* ZDSStreamJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZDSStreamJSONParser.m; path = external/ZDS_Shared/ZDSStreamJSONParser.m; sourceTree = "<group>"; };
+		D37EB72E1501361200682DBD /* ZSAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSAssetManager.h; path = external/ZDS_Shared/ZSAssetManager.h; sourceTree = "<group>"; };
+		D37EB72F1501361200682DBD /* ZSAssetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSAssetManager.m; path = external/ZDS_Shared/ZSAssetManager.m; sourceTree = "<group>"; };
+		D37EB7301501361200682DBD /* ZSContextWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSContextWatcher.h; path = external/ZDS_Shared/ZSContextWatcher.h; sourceTree = "<group>"; };
+		D37EB7311501361200682DBD /* ZSContextWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSContextWatcher.m; path = external/ZDS_Shared/ZSContextWatcher.m; sourceTree = "<group>"; };
+		D37EB7321501361200682DBD /* ZSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSReachability.h; path = external/ZDS_Shared/ZSReachability.h; sourceTree = "<group>"; };
+		D37EB7331501361200682DBD /* ZSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSReachability.m; path = external/ZDS_Shared/ZSReachability.m; sourceTree = "<group>"; };
+		D37EB7341501361200682DBD /* ZSURLConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSURLConnectionDelegate.h; path = external/ZDS_Shared/ZSURLConnectionDelegate.h; sourceTree = "<group>"; };
+		D37EB7351501361200682DBD /* ZSURLConnectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSURLConnectionDelegate.m; path = external/ZDS_Shared/ZSURLConnectionDelegate.m; sourceTree = "<group>"; };
+		D37EB73D1501368500682DBD /* ZSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSConstants.h; path = external/ZDS_Shared/ZSConstants.h; sourceTree = "<group>"; };
+		D37EB73F1501373D00682DBD /* libYAJLiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYAJLiOS.a; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/libYAJLiOS.a"; sourceTree = "<group>"; };
+		D37EB7401501373D00682DBD /* NSBundle+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+YAJL.h"; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/NSBundle+YAJL.h"; sourceTree = "<group>"; };
+		D37EB7411501373D00682DBD /* NSObject+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+YAJL.h"; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/NSObject+YAJL.h"; sourceTree = "<group>"; };
+		D37EB7421501373D00682DBD /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yajl_common.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/yajl_common.h"; sourceTree = "<group>"; };
+		D37EB7431501373D00682DBD /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yajl_gen.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/yajl_gen.h"; sourceTree = "<group>"; };
+		D37EB7441501373D00682DBD /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yajl_parse.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/yajl_parse.h"; sourceTree = "<group>"; };
+		D37EB7451501373D00682DBD /* YAJLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLDocument.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/YAJLDocument.h"; sourceTree = "<group>"; };
+		D37EB7461501373D00682DBD /* YAJLGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLGen.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/YAJLGen.h"; sourceTree = "<group>"; };
+		D37EB7471501373D00682DBD /* YAJLIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLIOS.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/YAJLIOS.h"; sourceTree = "<group>"; };
+		D37EB7481501373D00682DBD /* YAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLParser.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/YAJLParser.h"; sourceTree = "<group>"; };
+		D37EB74E1501378900682DBD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D37EB750150137CB00682DBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D387A84A14FD93F800C87719 /* ExpBkOffTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpBkOffTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D387A84E14FD93F800C87719 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D387A85014FD93F800C87719 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D387A85214FD93F800C87719 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D387A85414FD93F800C87719 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		D387A85814FD93F800C87719 /* ExpBkOffTest-Info.plist */ = {isa = PBXFileReference; path = "ExpBkOffTest-Info.plist"; sourceTree = "<group>"; };
+		D387A85814FD93F800C87719 /* ExpBkOffTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpBkOffTest-Info.plist"; sourceTree = "<group>"; };
 		D387A85A14FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D387A85C14FD93F800C87719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D387A85E14FD93F800C87719 /* ExpBkOffTest-Prefix.pch */ = {isa = PBXFileReference; path = "ExpBkOffTest-Prefix.pch"; sourceTree = "<group>"; };
-		D387A85F14FD93F800C87719 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D387A85E14FD93F800C87719 /* ExpBkOffTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpBkOffTest-Prefix.pch"; sourceTree = "<group>"; };
+		D387A85F14FD93F800C87719 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D387A86014FD93F800C87719 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D387A86314FD93F800C87719 /* ExpBkOffTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExpBkOffTest.xcdatamodel; sourceTree = "<group>"; };
-		D387A86514FD93F800C87719 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		D387A86514FD93F800C87719 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		D387A86614FD93F800C87719 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		D387A86814FD93F800C87719 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		D387A86814FD93F800C87719 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D387A86914FD93F800C87719 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D387A86C14FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPhone.xib; sourceTree = "<group>"; };
 		D387A86F14FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController_iPad.xib; sourceTree = "<group>"; };
@@ -62,9 +132,9 @@
 		D387A87514FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController_iPad.xib; sourceTree = "<group>"; };
 		D387A87C14FD93F800C87719 /* ExpBkOffTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpBkOffTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D387A87D14FD93F800C87719 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D387A88614FD93F800C87719 /* ExpBkOffTestTests-Info.plist */ = {isa = PBXFileReference; path = "ExpBkOffTestTests-Info.plist"; sourceTree = "<group>"; };
+		D387A88614FD93F800C87719 /* ExpBkOffTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpBkOffTestTests-Info.plist"; sourceTree = "<group>"; };
 		D387A88814FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D387A88A14FD93F800C87719 /* ExpBkOffTestTests.h */ = {isa = PBXFileReference; path = ExpBkOffTestTests.h; sourceTree = "<group>"; };
+		D387A88A14FD93F800C87719 /* ExpBkOffTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpBkOffTestTests.h; sourceTree = "<group>"; };
 		D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpBkOffTestTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,10 +143,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D37EB751150137CB00682DBD /* QuartzCore.framework in Frameworks */,
+				D37EB74F1501378900682DBD /* SystemConfiguration.framework in Frameworks */,
 				D387A84F14FD93F800C87719 /* UIKit.framework in Frameworks */,
 				D387A85114FD93F800C87719 /* Foundation.framework in Frameworks */,
 				D387A85314FD93F800C87719 /* CoreGraphics.framework in Frameworks */,
 				D387A85514FD93F800C87719 /* CoreData.framework in Frameworks */,
+				D37EB7491501373D00682DBD /* libYAJLiOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,11 +167,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D37EB7041501357A00682DBD /* External */ = {
+			isa = PBXGroup;
+			children = (
+				D37EB7051501358800682DBD /* AQGridView */,
+				D37EB7061501359200682DBD /* ZDS_Shared */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		D37EB7051501358800682DBD /* AQGridView */ = {
+			isa = PBXGroup;
+			children = (
+				D37EB707150135CB00682DBD /* AQGridView.h */,
+				D37EB708150135CB00682DBD /* AQGridView.m */,
+				D37EB709150135CB00682DBD /* AQGridView+CellLayout.h */,
+				D37EB70A150135CB00682DBD /* AQGridView+CellLocationDelegation.h */,
+				D37EB70B150135CB00682DBD /* AQGridViewAnimatorItem.h */,
+				D37EB70C150135CB00682DBD /* AQGridViewAnimatorItem.m */,
+				D37EB70D150135CB00682DBD /* AQGridViewCell.h */,
+				D37EB70E150135CB00682DBD /* AQGridViewCell.m */,
+				D37EB70F150135CB00682DBD /* AQGridViewCell+AQGridViewCellPrivate.h */,
+				D37EB710150135CB00682DBD /* AQGridViewController.h */,
+				D37EB711150135CB00682DBD /* AQGridViewController.m */,
+				D37EB712150135CB00682DBD /* AQGridViewData.h */,
+				D37EB713150135CB00682DBD /* AQGridViewData.m */,
+				D37EB714150135CB00682DBD /* AQGridViewUpdateInfo.h */,
+				D37EB715150135CB00682DBD /* AQGridViewUpdateInfo.m */,
+				D37EB716150135CB00682DBD /* AQGridViewUpdateItem.h */,
+				D37EB717150135CB00682DBD /* AQGridViewUpdateItem.m */,
+				D37EB718150135CB00682DBD /* NSIndexSet+AQIndexesOutsideSet.h */,
+				D37EB719150135CB00682DBD /* NSIndexSet+AQIndexesOutsideSet.m */,
+				D37EB71A150135CB00682DBD /* NSIndexSet+AQIsSetContiguous.h */,
+				D37EB71B150135CB00682DBD /* NSIndexSet+AQIsSetContiguous.m */,
+				D37EB71C150135CB00682DBD /* UIColor+AQGridView.h */,
+				D37EB71D150135CB00682DBD /* UIColor+AQGridView.m */,
+			);
+			name = AQGridView;
+			sourceTree = "<group>";
+		};
+		D37EB7061501359200682DBD /* ZDS_Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D37EB73D1501368500682DBD /* ZSConstants.h */,
+				D37EB7281501361200682DBD /* NSData+ZSAdditions.h */,
+				D37EB7291501361200682DBD /* NSData+ZSAdditions.m */,
+				D37EB72A1501361200682DBD /* NSString+ZSAdditions.h */,
+				D37EB72B1501361200682DBD /* NSString+ZSAdditions.m */,
+				D37EB72C1501361200682DBD /* ZDSStreamJSONParser.h */,
+				D37EB72D1501361200682DBD /* ZDSStreamJSONParser.m */,
+				D37EB72E1501361200682DBD /* ZSAssetManager.h */,
+				D37EB72F1501361200682DBD /* ZSAssetManager.m */,
+				D37EB7301501361200682DBD /* ZSContextWatcher.h */,
+				D37EB7311501361200682DBD /* ZSContextWatcher.m */,
+				D37EB7321501361200682DBD /* ZSReachability.h */,
+				D37EB7331501361200682DBD /* ZSReachability.m */,
+				D37EB7341501361200682DBD /* ZSURLConnectionDelegate.h */,
+				D37EB7351501361200682DBD /* ZSURLConnectionDelegate.m */,
+				D37EB73E1501370D00682DBD /* YAJL */,
+			);
+			name = ZDS_Shared;
+			sourceTree = "<group>";
+		};
+		D37EB73E1501370D00682DBD /* YAJL */ = {
+			isa = PBXGroup;
+			children = (
+				D37EB73F1501373D00682DBD /* libYAJLiOS.a */,
+				D37EB7401501373D00682DBD /* NSBundle+YAJL.h */,
+				D37EB7411501373D00682DBD /* NSObject+YAJL.h */,
+				D37EB7421501373D00682DBD /* yajl_common.h */,
+				D37EB7431501373D00682DBD /* yajl_gen.h */,
+				D37EB7441501373D00682DBD /* yajl_parse.h */,
+				D37EB7451501373D00682DBD /* YAJLDocument.h */,
+				D37EB7461501373D00682DBD /* YAJLGen.h */,
+				D37EB7471501373D00682DBD /* YAJLIOS.h */,
+				D37EB7481501373D00682DBD /* YAJLParser.h */,
+			);
+			name = YAJL;
+			sourceTree = "<group>";
+		};
 		D387A83F14FD93F700C87719 = {
 			isa = PBXGroup;
 			children = (
 				D387A85614FD93F800C87719 /* ExpBkOffTest */,
 				D387A88414FD93F800C87719 /* ExpBkOffTestTests */,
+				D37EB7041501357A00682DBD /* External */,
 				D387A84D14FD93F800C87719 /* Frameworks */,
 				D387A84B14FD93F800C87719 /* Products */,
 			);
@@ -118,8 +271,10 @@
 			children = (
 				D387A84E14FD93F800C87719 /* UIKit.framework */,
 				D387A85014FD93F800C87719 /* Foundation.framework */,
+				D37EB750150137CB00682DBD /* QuartzCore.framework */,
 				D387A85214FD93F800C87719 /* CoreGraphics.framework */,
 				D387A85414FD93F800C87719 /* CoreData.framework */,
+				D37EB74E1501378900682DBD /* SystemConfiguration.framework */,
 				D387A87D14FD93F800C87719 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
@@ -289,6 +444,23 @@
 				D387A86414FD93F800C87719 /* ExpBkOffTest.xcdatamodeld in Sources */,
 				D387A86714FD93F800C87719 /* MasterViewController.m in Sources */,
 				D387A86A14FD93F800C87719 /* DetailViewController.m in Sources */,
+				D37EB71E150135CB00682DBD /* AQGridView.m in Sources */,
+				D37EB71F150135CB00682DBD /* AQGridViewAnimatorItem.m in Sources */,
+				D37EB720150135CB00682DBD /* AQGridViewCell.m in Sources */,
+				D37EB721150135CB00682DBD /* AQGridViewController.m in Sources */,
+				D37EB722150135CB00682DBD /* AQGridViewData.m in Sources */,
+				D37EB723150135CB00682DBD /* AQGridViewUpdateInfo.m in Sources */,
+				D37EB724150135CB00682DBD /* AQGridViewUpdateItem.m in Sources */,
+				D37EB725150135CB00682DBD /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
+				D37EB726150135CB00682DBD /* NSIndexSet+AQIsSetContiguous.m in Sources */,
+				D37EB727150135CB00682DBD /* UIColor+AQGridView.m in Sources */,
+				D37EB7361501361200682DBD /* NSData+ZSAdditions.m in Sources */,
+				D37EB7371501361200682DBD /* NSString+ZSAdditions.m in Sources */,
+				D37EB7381501361200682DBD /* ZDSStreamJSONParser.m in Sources */,
+				D37EB7391501361200682DBD /* ZSAssetManager.m in Sources */,
+				D37EB73A1501361200682DBD /* ZSContextWatcher.m in Sources */,
+				D37EB73B1501361200682DBD /* ZSReachability.m in Sources */,
+				D37EB73C1501361200682DBD /* ZSURLConnectionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +585,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExpBkOffTest/ExpBkOffTest-Prefix.pch";
 				INFOPLIST_FILE = "ExpBkOffTest/ExpBkOffTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/external/ZDS_Shared/FJImporter/YAJL-1.0.9\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -424,6 +601,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExpBkOffTest/ExpBkOffTest-Prefix.pch";
 				INFOPLIST_FILE = "ExpBkOffTest/ExpBkOffTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/external/ZDS_Shared/FJImporter/YAJL-1.0.9\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -482,6 +664,7 @@
 				D387A89114FD93F800C87719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D387A89214FD93F800C87719 /* Build configuration list for PBXNativeTarget "ExpBkOffTestTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +673,7 @@
 				D387A89414FD93F800C87719 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
