@@ -19,12 +19,9 @@
 		D37EB727150135CB00682DBD /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB71D150135CB00682DBD /* UIColor+AQGridView.m */; };
 		D37EB7361501361200682DBD /* NSData+ZSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB7291501361200682DBD /* NSData+ZSAdditions.m */; };
 		D37EB7371501361200682DBD /* NSString+ZSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB72B1501361200682DBD /* NSString+ZSAdditions.m */; };
-		D37EB7381501361200682DBD /* ZDSStreamJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB72D1501361200682DBD /* ZDSStreamJSONParser.m */; };
 		D37EB7391501361200682DBD /* ZSAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB72F1501361200682DBD /* ZSAssetManager.m */; };
-		D37EB73A1501361200682DBD /* ZSContextWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB7311501361200682DBD /* ZSContextWatcher.m */; };
 		D37EB73B1501361200682DBD /* ZSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB7331501361200682DBD /* ZSReachability.m */; };
 		D37EB73C1501361200682DBD /* ZSURLConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB7351501361200682DBD /* ZSURLConnectionDelegate.m */; };
-		D37EB7491501373D00682DBD /* libYAJLiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D37EB73F1501373D00682DBD /* libYAJLiOS.a */; };
 		D37EB74F1501378900682DBD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37EB74E1501378900682DBD /* SystemConfiguration.framework */; };
 		D37EB751150137CB00682DBD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37EB750150137CB00682DBD /* QuartzCore.framework */; };
 		D387A84F14FD93F800C87719 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A84E14FD93F800C87719 /* UIKit.framework */; };
@@ -47,6 +44,7 @@
 		D387A88114FD93F800C87719 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D387A85414FD93F800C87719 /* CoreData.framework */; };
 		D387A88914FD93F800C87719 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D387A88714FD93F800C87719 /* InfoPlist.strings */; };
 		D387A88C14FD93F800C87719 /* ExpBkOffTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */; };
+		D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD5B1507019B002ABD70 /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,27 +85,13 @@
 		D37EB7291501361200682DBD /* NSData+ZSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+ZSAdditions.m"; path = "external/ZDS_Shared/NSData+ZSAdditions.m"; sourceTree = "<group>"; };
 		D37EB72A1501361200682DBD /* NSString+ZSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+ZSAdditions.h"; path = "external/ZDS_Shared/NSString+ZSAdditions.h"; sourceTree = "<group>"; };
 		D37EB72B1501361200682DBD /* NSString+ZSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ZSAdditions.m"; path = "external/ZDS_Shared/NSString+ZSAdditions.m"; sourceTree = "<group>"; };
-		D37EB72C1501361200682DBD /* ZDSStreamJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZDSStreamJSONParser.h; path = external/ZDS_Shared/ZDSStreamJSONParser.h; sourceTree = "<group>"; };
-		D37EB72D1501361200682DBD /* ZDSStreamJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZDSStreamJSONParser.m; path = external/ZDS_Shared/ZDSStreamJSONParser.m; sourceTree = "<group>"; };
 		D37EB72E1501361200682DBD /* ZSAssetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSAssetManager.h; path = external/ZDS_Shared/ZSAssetManager.h; sourceTree = "<group>"; };
 		D37EB72F1501361200682DBD /* ZSAssetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSAssetManager.m; path = external/ZDS_Shared/ZSAssetManager.m; sourceTree = "<group>"; };
-		D37EB7301501361200682DBD /* ZSContextWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSContextWatcher.h; path = external/ZDS_Shared/ZSContextWatcher.h; sourceTree = "<group>"; };
-		D37EB7311501361200682DBD /* ZSContextWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSContextWatcher.m; path = external/ZDS_Shared/ZSContextWatcher.m; sourceTree = "<group>"; };
 		D37EB7321501361200682DBD /* ZSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSReachability.h; path = external/ZDS_Shared/ZSReachability.h; sourceTree = "<group>"; };
 		D37EB7331501361200682DBD /* ZSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSReachability.m; path = external/ZDS_Shared/ZSReachability.m; sourceTree = "<group>"; };
 		D37EB7341501361200682DBD /* ZSURLConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSURLConnectionDelegate.h; path = external/ZDS_Shared/ZSURLConnectionDelegate.h; sourceTree = "<group>"; };
 		D37EB7351501361200682DBD /* ZSURLConnectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSURLConnectionDelegate.m; path = external/ZDS_Shared/ZSURLConnectionDelegate.m; sourceTree = "<group>"; };
 		D37EB73D1501368500682DBD /* ZSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSConstants.h; path = external/ZDS_Shared/ZSConstants.h; sourceTree = "<group>"; };
-		D37EB73F1501373D00682DBD /* libYAJLiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYAJLiOS.a; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/libYAJLiOS.a"; sourceTree = "<group>"; };
-		D37EB7401501373D00682DBD /* NSBundle+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+YAJL.h"; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/NSBundle+YAJL.h"; sourceTree = "<group>"; };
-		D37EB7411501373D00682DBD /* NSObject+YAJL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+YAJL.h"; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/NSObject+YAJL.h"; sourceTree = "<group>"; };
-		D37EB7421501373D00682DBD /* yajl_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yajl_common.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/yajl_common.h"; sourceTree = "<group>"; };
-		D37EB7431501373D00682DBD /* yajl_gen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yajl_gen.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/yajl_gen.h"; sourceTree = "<group>"; };
-		D37EB7441501373D00682DBD /* yajl_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = yajl_parse.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/yajl_parse.h"; sourceTree = "<group>"; };
-		D37EB7451501373D00682DBD /* YAJLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLDocument.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/YAJLDocument.h"; sourceTree = "<group>"; };
-		D37EB7461501373D00682DBD /* YAJLGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLGen.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/YAJLGen.h"; sourceTree = "<group>"; };
-		D37EB7471501373D00682DBD /* YAJLIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLIOS.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/YAJLIOS.h"; sourceTree = "<group>"; };
-		D37EB7481501373D00682DBD /* YAJLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YAJLParser.h; path = "external/ZDS_Shared/FJImporter/YAJL-1.0.9/YAJLParser.h"; sourceTree = "<group>"; };
 		D37EB74E1501378900682DBD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D37EB750150137CB00682DBD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D387A84A14FD93F800C87719 /* ExpBkOffTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpBkOffTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +120,8 @@
 		D387A88814FD93F800C87719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D387A88A14FD93F800C87719 /* ExpBkOffTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpBkOffTestTests.h; sourceTree = "<group>"; };
 		D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpBkOffTestTests.m; sourceTree = "<group>"; };
+		D397BD5A1507019B002ABD70 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = external/JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		D397BD5B1507019B002ABD70 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = external/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +135,6 @@
 				D387A85114FD93F800C87719 /* Foundation.framework in Frameworks */,
 				D387A85314FD93F800C87719 /* CoreGraphics.framework in Frameworks */,
 				D387A85514FD93F800C87719 /* CoreData.framework in Frameworks */,
-				D37EB7491501373D00682DBD /* libYAJLiOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +155,7 @@
 		D37EB7041501357A00682DBD /* External */ = {
 			isa = PBXGroup;
 			children = (
+				D397BD5915070188002ABD70 /* JSONKit */,
 				D37EB7051501358800682DBD /* AQGridView */,
 				D37EB7061501359200682DBD /* ZDS_Shared */,
 			);
@@ -214,36 +200,14 @@
 				D37EB7291501361200682DBD /* NSData+ZSAdditions.m */,
 				D37EB72A1501361200682DBD /* NSString+ZSAdditions.h */,
 				D37EB72B1501361200682DBD /* NSString+ZSAdditions.m */,
-				D37EB72C1501361200682DBD /* ZDSStreamJSONParser.h */,
-				D37EB72D1501361200682DBD /* ZDSStreamJSONParser.m */,
 				D37EB72E1501361200682DBD /* ZSAssetManager.h */,
 				D37EB72F1501361200682DBD /* ZSAssetManager.m */,
-				D37EB7301501361200682DBD /* ZSContextWatcher.h */,
-				D37EB7311501361200682DBD /* ZSContextWatcher.m */,
 				D37EB7321501361200682DBD /* ZSReachability.h */,
 				D37EB7331501361200682DBD /* ZSReachability.m */,
 				D37EB7341501361200682DBD /* ZSURLConnectionDelegate.h */,
 				D37EB7351501361200682DBD /* ZSURLConnectionDelegate.m */,
-				D37EB73E1501370D00682DBD /* YAJL */,
 			);
 			name = ZDS_Shared;
-			sourceTree = "<group>";
-		};
-		D37EB73E1501370D00682DBD /* YAJL */ = {
-			isa = PBXGroup;
-			children = (
-				D37EB73F1501373D00682DBD /* libYAJLiOS.a */,
-				D37EB7401501373D00682DBD /* NSBundle+YAJL.h */,
-				D37EB7411501373D00682DBD /* NSObject+YAJL.h */,
-				D37EB7421501373D00682DBD /* yajl_common.h */,
-				D37EB7431501373D00682DBD /* yajl_gen.h */,
-				D37EB7441501373D00682DBD /* yajl_parse.h */,
-				D37EB7451501373D00682DBD /* YAJLDocument.h */,
-				D37EB7461501373D00682DBD /* YAJLGen.h */,
-				D37EB7471501373D00682DBD /* YAJLIOS.h */,
-				D37EB7481501373D00682DBD /* YAJLParser.h */,
-			);
-			name = YAJL;
 			sourceTree = "<group>";
 		};
 		D387A83F14FD93F700C87719 = {
@@ -327,6 +291,15 @@
 				D387A88714FD93F800C87719 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D397BD5915070188002ABD70 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				D397BD5A1507019B002ABD70 /* JSONKit.h */,
+				D397BD5B1507019B002ABD70 /* JSONKit.m */,
+			);
+			name = JSONKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,11 +429,10 @@
 				D37EB727150135CB00682DBD /* UIColor+AQGridView.m in Sources */,
 				D37EB7361501361200682DBD /* NSData+ZSAdditions.m in Sources */,
 				D37EB7371501361200682DBD /* NSString+ZSAdditions.m in Sources */,
-				D37EB7381501361200682DBD /* ZDSStreamJSONParser.m in Sources */,
 				D37EB7391501361200682DBD /* ZSAssetManager.m in Sources */,
-				D37EB73A1501361200682DBD /* ZSContextWatcher.m in Sources */,
 				D37EB73B1501361200682DBD /* ZSReachability.m in Sources */,
 				D37EB73C1501361200682DBD /* ZSURLConnectionDelegate.m in Sources */,
+				D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

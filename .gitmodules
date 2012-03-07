@@ -4,3 +4,6 @@
 [submodule "external/AQGridView"]
 	path = external/AQGridView
 	url = git@github.com:carlbrown/AQGridView.git
+[submodule "external/JSONKit"]
+	path = external/JSONKit
+	url = git://github.com/johnezang/JSONKit.git
