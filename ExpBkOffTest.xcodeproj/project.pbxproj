@@ -45,6 +45,7 @@
 		D387A88914FD93F800C87719 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D387A88714FD93F800C87719 /* InfoPlist.strings */; };
 		D387A88C14FD93F800C87719 /* ExpBkOffTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */; };
 		D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD5B1507019B002ABD70 /* JSONKit.m */; };
+		D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,8 @@
 		D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpBkOffTestTests.m; sourceTree = "<group>"; };
 		D397BD5A1507019B002ABD70 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = external/JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		D397BD5B1507019B002ABD70 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = external/JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		D397BD891507B930002ABD70 /* NSString+PDRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PDRegex.h"; path = "external/RegexOnNSString/RegexOnNSString/NSString+PDRegex.h"; sourceTree = "<group>"; };
+		D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PDRegex.m"; path = "external/RegexOnNSString/RegexOnNSString/NSString+PDRegex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 		D37EB7041501357A00682DBD /* External */ = {
 			isa = PBXGroup;
 			children = (
+				D397BD881507B917002ABD70 /* RegexOnNSString */,
 				D397BD5915070188002ABD70 /* JSONKit */,
 				D37EB7051501358800682DBD /* AQGridView */,
 				D37EB7061501359200682DBD /* ZDS_Shared */,
@@ -302,6 +306,15 @@
 			name = JSONKit;
 			sourceTree = "<group>";
 		};
+		D397BD881507B917002ABD70 /* RegexOnNSString */ = {
+			isa = PBXGroup;
+			children = (
+				D397BD891507B930002ABD70 /* NSString+PDRegex.h */,
+				D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */,
+			);
+			name = RegexOnNSString;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,6 +446,7 @@
 				D37EB73B1501361200682DBD /* ZSReachability.m in Sources */,
 				D37EB73C1501361200682DBD /* ZSURLConnectionDelegate.m in Sources */,
 				D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */,
+				D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
