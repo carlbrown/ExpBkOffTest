@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZSAssetManager.h"
+
+#define BASE_URL_STRING( x ) [NSString stringWithFormat:@"http://api.flickr.com/services/feeds/photos_public.gne?%@=landscape&lang=en-us&format=json&nojsoncallback=1", x ] 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -15,6 +18,7 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (readonly, strong, nonatomic) ZSAssetManager *assetManager;
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

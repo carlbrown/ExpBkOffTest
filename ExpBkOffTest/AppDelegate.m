@@ -20,6 +20,7 @@
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 @synthesize navigationController = _navigationController;
 @synthesize splitViewController = _splitViewController;
+@synthesize assetManager = _assetManager;
 
 - (void)dealloc
 {
@@ -29,12 +30,17 @@
     [__persistentStoreCoordinator release];
     [_navigationController release];
     [_splitViewController release];
+    [_assetManager release];
     [super dealloc];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    
+    _assetManager = [[ZSAssetManager alloc] init];
+    [_assetManager setBackgroundCaching:YES];
+    
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         MasterViewController *masterViewController = [[[MasterViewController alloc] initWithNibName:@"MasterViewController_iPhone" bundle:nil] autorelease];
