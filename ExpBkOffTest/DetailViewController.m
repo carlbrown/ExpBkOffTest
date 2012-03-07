@@ -18,6 +18,7 @@
 @synthesize detailItem = _detailItem;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
+@synthesize gridView = _gridView;
 
 - (void)dealloc
 {
@@ -49,7 +50,7 @@
     // Update the user interface for the detail item.
 
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
+        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"name"] description];
     }
 }
 
@@ -100,5 +101,16 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
+
+#pragma mark - AQGridViewController
+
+- (NSUInteger) numberOfItemsInGridView: (AQGridView *) gridView {
+    return 0u;
+}
+
+- (AQGridViewCell *) gridView: (AQGridView *) gridView cellForItemAtIndex: (NSUInteger) index {
+    return nil;
+}
+
 
 @end

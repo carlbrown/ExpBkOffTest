@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AQGridViewController.h"
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, AQGridViewDelegate, AQGridViewDataSource>
 
 @property (strong, nonatomic) id detailItem;
 
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+@property (strong, nonatomic) IBOutlet AQGridView *gridView;
 
 @end
