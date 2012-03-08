@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1170" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Tag">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Tag" representedClassName="Tag">
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="thumbnails" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Thumbnail" inverseName="parentTag" inverseEntity="Thumbnail" syncable="YES"/>
+    </entity>
+    <entity name="Thumbnail" syncable="YES">
+        <attribute name="urlString" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="parentTag" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" inverseName="thumbnails" inverseEntity="Tag" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Tag" positionX="261" positionY="189" width="128" height="75"/>
+        <element name="Tag" positionX="261" positionY="189" width="128" height="90"/>
+        <element name="Thumbnail" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>

@@ -46,6 +46,7 @@
 		D387A88C14FD93F800C87719 /* ExpBkOffTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */; };
 		D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD5B1507019B002ABD70 /* JSONKit.m */; };
 		D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */; };
+		D3BFE27E15092D7F00D7ED10 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE27D15092D7F00D7ED10 /* Tag.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,8 @@
 		D397BD5B1507019B002ABD70 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = external/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		D397BD891507B930002ABD70 /* NSString+PDRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PDRegex.h"; path = "external/RegexOnNSString/RegexOnNSString/NSString+PDRegex.h"; sourceTree = "<group>"; };
 		D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PDRegex.m"; path = "external/RegexOnNSString/RegexOnNSString/NSString+PDRegex.m"; sourceTree = "<group>"; };
+		D3BFE27C15092D7F00D7ED10 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = ../Tag.h; sourceTree = "<group>"; };
+		D3BFE27D15092D7F00D7ED10 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = ../Tag.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,16 +254,10 @@
 		D387A85614FD93F800C87719 /* ExpBkOffTest */ = {
 			isa = PBXGroup;
 			children = (
+				D3BFE280150933BC00D7ED10 /* Controllers */,
+				D3BFE27F150933AB00D7ED10 /* Models */,
 				D387A85F14FD93F800C87719 /* AppDelegate.h */,
 				D387A86014FD93F800C87719 /* AppDelegate.m */,
-				D387A86514FD93F800C87719 /* MasterViewController.h */,
-				D387A86614FD93F800C87719 /* MasterViewController.m */,
-				D387A86814FD93F800C87719 /* DetailViewController.h */,
-				D387A86914FD93F800C87719 /* DetailViewController.m */,
-				D387A86B14FD93F800C87719 /* MasterViewController_iPhone.xib */,
-				D387A86E14FD93F800C87719 /* MasterViewController_iPad.xib */,
-				D387A87114FD93F800C87719 /* DetailViewController_iPhone.xib */,
-				D387A87414FD93F800C87719 /* DetailViewController_iPad.xib */,
 				D387A86214FD93F800C87719 /* ExpBkOffTest.xcdatamodeld */,
 				D387A85714FD93F800C87719 /* Supporting Files */,
 			);
@@ -313,6 +310,30 @@
 				D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */,
 			);
 			name = RegexOnNSString;
+			sourceTree = "<group>";
+		};
+		D3BFE27F150933AB00D7ED10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3BFE27C15092D7F00D7ED10 /* Tag.h */,
+				D3BFE27D15092D7F00D7ED10 /* Tag.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D3BFE280150933BC00D7ED10 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D387A86514FD93F800C87719 /* MasterViewController.h */,
+				D387A86614FD93F800C87719 /* MasterViewController.m */,
+				D387A86814FD93F800C87719 /* DetailViewController.h */,
+				D387A86914FD93F800C87719 /* DetailViewController.m */,
+				D387A86B14FD93F800C87719 /* MasterViewController_iPhone.xib */,
+				D387A86E14FD93F800C87719 /* MasterViewController_iPad.xib */,
+				D387A87114FD93F800C87719 /* DetailViewController_iPhone.xib */,
+				D387A87414FD93F800C87719 /* DetailViewController_iPad.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +468,7 @@
 				D37EB73C1501361200682DBD /* ZSURLConnectionDelegate.m in Sources */,
 				D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */,
 				D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */,
+				D3BFE27E15092D7F00D7ED10 /* Tag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
