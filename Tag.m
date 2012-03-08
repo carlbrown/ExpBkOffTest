@@ -7,6 +7,7 @@
 //
 
 #import "Tag.h"
+#import "Thumbnail.h"
 #import "AppDelegate.h"
 #import "JSONKit.h"
 #import "NSString+PDRegex.h"
@@ -26,12 +27,14 @@
     NSURL *localJSONUrl= [[(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager] localURLForAssetURL:tagDownloadUrl];
     
     if (localJSONUrl) {
-        [self queuePhotosForTagFromUrl:tagDownloadUrl];
-    }
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageDownloadComplete object:tagDownloadUrl];
 
+        [self queuePhotosForTagFromUrl:tagDownloadUrl];
+    } 
 }
 
 -(void) queuePhotosForTagFromUrl:(NSURL *) url {
+
     NSData *jsonData=[[(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager] dataForURL:url];
     if (jsonData) {
         NSError *error=nil;
@@ -49,7 +52,7 @@
         }
         //NSLog(@"Got object %@",obj);
         if ([obj isKindOfClass:[NSDictionary class]]) {
-            NSMutableSet *urlSet = [[NSMutableSet alloc] init];
+            NSMutableOrderedSet *urlSet = [[NSMutableOrderedSet alloc] init];
             NSArray *items = [(NSDictionary *) obj objectForKey:@"items"];
             for (NSDictionary *item in items) {
                 if (item) {
@@ -58,8 +61,11 @@
                         NSString *link = [media objectForKey:@"m"];
                         if (link) {
                             NSLog(@"Found link: '%@'",link);
-                            NSURL *urlToQueue = [NSURL URLWithString:link];
-                            if (urlToQueue) {
+                            //This is the thumbnail URL, to make us take more bandwith (and thus test better)
+                            //  use the full blown one
+
+                            NSURL *urlToQueue = [NSURL URLWithString:[link stringByReplacingRegexPattern:@"_m\\." withString:@"."]];
+                            if (urlToQueue) {                                
                                 [urlSet addObject:urlToQueue];
                             }
                         }
@@ -67,7 +73,9 @@
                 }
             }
             if ([urlSet count]>0) {
-                [[(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager] queueAssetsForRetrievalFromURLSet:urlSet];
+                [[(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager] queueAssetsForRetrievalFromURLSet:[urlSet set]];
+                [self convertURLSetToThumbnails:urlSet];
+                
             }
             [urlSet release];
         }
@@ -76,10 +84,35 @@
 
 -(void) queuePhotosForTagFromNotification:(NSNotification *) notification {
     if ([[notification name] isEqualToString:kImageDownloadComplete]) {
+
         NSURL *url=[notification object];
+        
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageDownloadComplete object:url];
+
         [self queuePhotosForTagFromUrl:url];
     }
     
+}
+
+-(void) convertURLSetToThumbnails:(NSOrderedSet *) urls {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Thumbnail" inManagedObjectContext:context];
+    NSMutableOrderedSet *newThumbnails = [[NSMutableOrderedSet alloc] init];
+    for (NSURL *url in urls) {
+        Thumbnail *thumbnail = [[Thumbnail alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:context];
+        [thumbnail setUrlString:[url absoluteString]];
+        [newThumbnails addObject:thumbnail];
+    }
+    [self setThumbnails:newThumbnails];
+    // Save the context.
+    NSError *error = nil;
+    if (![[self managedObjectContext] save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    [newThumbnails release];
 }
 
 

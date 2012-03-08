@@ -5,7 +5,7 @@
         <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="thumbnails" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Thumbnail" inverseName="parentTag" inverseEntity="Thumbnail" syncable="YES"/>
     </entity>
-    <entity name="Thumbnail" syncable="YES">
+    <entity name="Thumbnail" representedClassName="Thumbnail" syncable="YES">
         <attribute name="urlString" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="parentTag" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Tag" inverseName="thumbnails" inverseEntity="Tag" syncable="YES"/>
     </entity>

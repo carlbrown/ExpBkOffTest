@@ -47,6 +47,7 @@
 		D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD5B1507019B002ABD70 /* JSONKit.m */; };
 		D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */; };
 		D3BFE27E15092D7F00D7ED10 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE27D15092D7F00D7ED10 /* Tag.m */; };
+		D3BFE2831509578600D7ED10 /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE2821509578600D7ED10 /* Thumbnail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,8 @@
 		D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PDRegex.m"; path = "external/RegexOnNSString/RegexOnNSString/NSString+PDRegex.m"; sourceTree = "<group>"; };
 		D3BFE27C15092D7F00D7ED10 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = ../Tag.h; sourceTree = "<group>"; };
 		D3BFE27D15092D7F00D7ED10 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = ../Tag.m; sourceTree = "<group>"; };
+		D3BFE2811509578600D7ED10 /* Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thumbnail.h; sourceTree = "<group>"; };
+		D3BFE2821509578600D7ED10 /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thumbnail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +320,8 @@
 			children = (
 				D3BFE27C15092D7F00D7ED10 /* Tag.h */,
 				D3BFE27D15092D7F00D7ED10 /* Tag.m */,
+				D3BFE2811509578600D7ED10 /* Thumbnail.h */,
+				D3BFE2821509578600D7ED10 /* Thumbnail.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -469,6 +474,7 @@
 				D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */,
 				D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */,
 				D3BFE27E15092D7F00D7ED10 /* Tag.m in Sources */,
+				D3BFE2831509578600D7ED10 /* Thumbnail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

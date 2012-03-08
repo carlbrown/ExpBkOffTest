@@ -32,5 +32,6 @@
 
 -(void) queuePhotosForTagFromUrl:(NSURL *) localURL;
 -(void) fetch;
+-(void) convertURLSetToThumbnails:(NSOrderedSet *) urls;
 
 @end
