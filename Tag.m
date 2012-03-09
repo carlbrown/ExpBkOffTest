@@ -11,7 +11,7 @@
 #import "AppDelegate.h"
 #import "JSONKit.h"
 #import "NSString+PDRegex.h"
-
+#import "ZSAssetManager.h"
 
 @implementation Tag
 
@@ -24,7 +24,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(queuePhotosForTagFromNotification:) name:kImageDownloadComplete object:tagDownloadUrl];
     
-    NSURL *localJSONUrl= [[(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager] localURLForAssetURL:tagDownloadUrl];
+    NSURL *localJSONUrl= [[(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager]  localURLForAssetURL:tagDownloadUrl];
     
     if (localJSONUrl) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageDownloadComplete object:tagDownloadUrl];
@@ -35,7 +35,7 @@
 
 -(void) queuePhotosForTagFromUrl:(NSURL *) url {
 
-    NSData *jsonData=[[(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager] dataForURL:url];
+    NSData *jsonData=[[(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager]  dataForURL:url];
     if (jsonData) {
         NSError *error=nil;
         NSObject *obj = [jsonData objectFromJSONDataWithParseOptions:(JKParseOptionComments | JKParseOptionLooseUnicode | JKParseOptionPermitTextAfterValidJSON | JKParseOptionUnicodeNewlines) error:&error];

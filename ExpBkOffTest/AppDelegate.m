@@ -12,6 +12,9 @@
 
 #import "DetailViewController.h"
 
+#import "ZSAssetManager.h"
+
+
 @implementation AppDelegate
 
 @synthesize window = _window;

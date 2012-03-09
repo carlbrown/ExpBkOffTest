@@ -7,6 +7,9 @@
 //
 
 #import "DetailViewController.h"
+#import "Tag.h"
+#import "GridImageCell.h"
+#import "AQGridView.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -52,6 +55,11 @@
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"name"] description];
     }
+    
+    //Note - the AQGridView doesn't listed to viewDidLoad or anything like that so you 
+    //  MUST call reloadData or the like to cause it to set up its cells
+    [self.gridView reloadData];
+
 }
 
 - (void)viewDidLoad
@@ -105,11 +113,29 @@
 #pragma mark - AQGridViewController
 
 - (NSUInteger) numberOfItemsInGridView: (AQGridView *) gridView {
-    return 0u;
+    return [[[self detailItem] thumbnails] count];
 }
 
-- (AQGridViewCell *) gridView: (AQGridView *) gridView cellForItemAtIndex: (NSUInteger) index {
-    return nil;
+- (AQGridViewCell *) gridView: (AQGridView *) aGridView cellForItemAtIndex: (NSUInteger) index
+{
+    static NSString * CellIdentifier = @"CellIdentifier";
+        
+    GridImageCell * cell = (GridImageCell *)[aGridView dequeueReusableCellWithIdentifier: CellIdentifier];
+    if ( cell == nil )
+    {
+        cell = [[GridImageCell alloc] initWithFrame: CGRectMake(0.0, 0.0, 96, 72.0)
+                                                 reuseIdentifier: CellIdentifier];
+        cell.selectionGlowColor = [UIColor blueColor];
+    }
+    
+    [cell setThumbnail:[[[self detailItem] thumbnails] objectAtIndex:index]];
+        
+    return ( cell );
+}
+
+- (CGSize) portraitGridCellSizeForGridView: (AQGridView *) aGridView
+{
+    return ( CGSizeMake(96.0, 72.0) );
 }
 
 

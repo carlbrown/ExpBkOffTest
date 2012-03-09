@@ -221,10 +221,10 @@
 	    if (!self.detailViewController) {
 	        self.detailViewController = [[[DetailViewController alloc] initWithNibName:@"DetailViewController_iPhone" bundle:nil] autorelease];
 	    }
-        self.detailViewController.detailItem = object;
+        self.detailViewController.detailItem = (Tag *) object;
         [self.navigationController pushViewController:self.detailViewController animated:YES];
     } else {
-        self.detailViewController.detailItem = object;
+        self.detailViewController.detailItem = (Tag *) object;
     }
 }
 

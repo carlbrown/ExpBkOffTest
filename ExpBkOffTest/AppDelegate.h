@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZSAssetManager.h"
+
+@class ZSAssetManager;
 
 #define BASE_URL_STRING( x ) [NSString stringWithFormat:@"http://api.flickr.com/services/feeds/photos_public.gne?%@=landscape&lang=en-us&format=json&nojsoncallback=1", x ] 
 

@@ -48,6 +48,7 @@
 		D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */; };
 		D3BFE27E15092D7F00D7ED10 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE27D15092D7F00D7ED10 /* Tag.m */; };
 		D3BFE2831509578600D7ED10 /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE2821509578600D7ED10 /* Thumbnail.m */; };
+		D3BFE2A1150966F600D7ED10 /* GridImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE2A0150966F600D7ED10 /* GridImageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +63,7 @@
 
 /* Begin PBXFileReference section */
 		D37EB707150135CB00682DBD /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridView.h; path = external/AQGridView/Classes/AQGridView.h; sourceTree = "<group>"; };
-		D37EB708150135CB00682DBD /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AQGridView.m; path = external/AQGridView/Classes/AQGridView.m; sourceTree = "<group>"; };
+		D37EB708150135CB00682DBD /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AQGridView.m; path = external/AQGridView/Classes/AQGridView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		D37EB709150135CB00682DBD /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AQGridView+CellLayout.h"; path = "external/AQGridView/Classes/AQGridView+CellLayout.h"; sourceTree = "<group>"; };
 		D37EB70A150135CB00682DBD /* AQGridView+CellLocationDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AQGridView+CellLocationDelegation.h"; path = "external/AQGridView/Classes/AQGridView+CellLocationDelegation.h"; sourceTree = "<group>"; };
 		D37EB70B150135CB00682DBD /* AQGridViewAnimatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridViewAnimatorItem.h; path = external/AQGridView/Classes/AQGridViewAnimatorItem.h; sourceTree = "<group>"; };
@@ -128,9 +129,11 @@
 		D397BD891507B930002ABD70 /* NSString+PDRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PDRegex.h"; path = "external/RegexOnNSString/RegexOnNSString/NSString+PDRegex.h"; sourceTree = "<group>"; };
 		D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PDRegex.m"; path = "external/RegexOnNSString/RegexOnNSString/NSString+PDRegex.m"; sourceTree = "<group>"; };
 		D3BFE27C15092D7F00D7ED10 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = ../Tag.h; sourceTree = "<group>"; };
-		D3BFE27D15092D7F00D7ED10 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tag.m; path = ../Tag.m; sourceTree = "<group>"; };
+		D3BFE27D15092D7F00D7ED10 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = Tag.m; path = ../Tag.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		D3BFE2811509578600D7ED10 /* Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thumbnail.h; sourceTree = "<group>"; };
 		D3BFE2821509578600D7ED10 /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thumbnail.m; sourceTree = "<group>"; };
+		D3BFE29F150966F600D7ED10 /* GridImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridImageCell.h; sourceTree = "<group>"; };
+		D3BFE2A0150966F600D7ED10 /* GridImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GridImageCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +260,7 @@
 		D387A85614FD93F800C87719 /* ExpBkOffTest */ = {
 			isa = PBXGroup;
 			children = (
+				D3BFE29E150966B800D7ED10 /* Views/Cells */,
 				D3BFE280150933BC00D7ED10 /* Controllers */,
 				D3BFE27F150933AB00D7ED10 /* Models */,
 				D387A85F14FD93F800C87719 /* AppDelegate.h */,
@@ -339,6 +343,15 @@
 				D387A87414FD93F800C87719 /* DetailViewController_iPad.xib */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D3BFE29E150966B800D7ED10 /* Views/Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D3BFE29F150966F600D7ED10 /* GridImageCell.h */,
+				D3BFE2A0150966F600D7ED10 /* GridImageCell.m */,
+			);
+			name = Views/Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,6 +488,7 @@
 				D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */,
 				D3BFE27E15092D7F00D7ED10 /* Tag.m in Sources */,
 				D3BFE2831509578600D7ED10 /* Thumbnail.m in Sources */,
+				D3BFE2A1150966F600D7ED10 /* GridImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

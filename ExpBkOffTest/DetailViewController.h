@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "AQGridViewController.h"
+@class Tag;
+@class AQGridView;
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate, AQGridViewDelegate, AQGridViewDataSource>
-
-@property (strong, nonatomic) id detailItem;
 
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @property (strong, nonatomic) IBOutlet AQGridView *gridView;
+
+@property (strong, nonatomic) Tag *detailItem;
 
 @end
