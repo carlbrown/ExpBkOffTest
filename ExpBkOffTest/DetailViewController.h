@@ -11,12 +11,14 @@
 @class Tag;
 @class AQGridView;
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, AQGridViewDelegate, AQGridViewDataSource>
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, AQGridViewDelegate, AQGridViewDataSource, NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @property (strong, nonatomic) IBOutlet AQGridView *gridView;
 
 @property (strong, nonatomic) Tag *detailItem;
+
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @end

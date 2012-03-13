@@ -40,13 +40,13 @@
     }
     NSString *ourURLString = [newThumbnail urlString];
     NSURL *ourURL = [NSURL URLWithString:ourURLString];
-    
+    //Register for asset manager to tell us if it changes
+    NSLog(@"Registering for notification for URL:%@",ourURL);
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupImageView:) name:kImageDownloadComplete object:nil];
+
     ZSAssetManager *assetManager = [(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager];
     UIImage *image = [assetManager imageForURL:ourURL];
-    if (image==nil) {
-        //Wait for the asset manager to fetch it for us
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupImageView:) name:kImageDownloadComplete object:ourURL];
-    } else {
+    if (image!=nil) {
         [[self imageView] setImage:image];
         if ([[self activityIndicatorView] superview] != nil) {
             [[self activityIndicatorView] stopAnimating];
@@ -60,12 +60,24 @@
 }
 
 -(void) setupImageView:(NSNotification *) notification {
+    
     Thumbnail *newThumbnail = [self thumbnail];
     if (newThumbnail==nil) {
         return;
     }
+    NSURL *notificationURL = (NSURL *) [notification object];
     ZSAssetManager *am = [(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager];
     NSURL *ourURL = [NSURL URLWithString:[newThumbnail urlString]];
+    if (![[notificationURL absoluteString] isEqualToString:[newThumbnail urlString]]) {
+        NSLog(@"Skipping notification for %@ instead of %@",[notificationURL absoluteString],[newThumbnail urlString]);
+        return;
+    }
+    NSLog(@"Caught notification for URL:%@",ourURL);
+    
+    if (notificationURL != ourURL) {
+        NSLog(@"url %@ not equal to %@ but should be",notificationURL, ourURL);
+    }
+
     UIImage *image = [am imageForURL:ourURL];
     if (image!=nil) {
         [[self imageView] setImage:image];
@@ -82,8 +94,17 @@
 }
 
 - (void) prepareForReuse {
-    //Remove all observers (since we don't want to be notified of a URL that is no longer ours)
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    NSString *ourURLString = [[self thumbnail] urlString];
+    if (ourURLString) {
+        NSURL *ourURL = [NSURL URLWithString:ourURLString];
+
+        if (ourURL) {
+            NSLog(@"Removing notification for URL:%@",ourURL);
+
+            [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageDownloadComplete object:ourURL];
+        }
+    }
 
     [[self imageView] setImage:nil];
     [self setThumbnail:nil];
@@ -97,9 +118,6 @@
         [[self activityIndicatorView] startAnimating];
         [[self contentView] addSubview:[self activityIndicatorView]];
     }
-    //Reinstate the observer on our own thumbnail property
-    [self addObserver:self forKeyPath:@"thumbnail" options:NSKeyValueObservingOptionNew context:nil];
-
 }
 
 -(void) dealloc {

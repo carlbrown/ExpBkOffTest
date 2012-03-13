@@ -13,6 +13,7 @@
 @implementation Thumbnail
 
 @dynamic urlString;
+@dynamic displayOrder;
 @dynamic parentTag;
 
 @end

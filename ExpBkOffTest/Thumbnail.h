@@ -14,6 +14,7 @@
 @interface Thumbnail : NSManagedObject
 
 @property (nonatomic, retain) NSString * urlString;
+@property (nonatomic, retain) NSNumber * displayOrder;
 @property (nonatomic, retain) Tag *parentTag;
 
 @end

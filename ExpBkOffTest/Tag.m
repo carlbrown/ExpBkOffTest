@@ -28,27 +28,28 @@
     
     if (localJSONUrl) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageDownloadComplete object:tagDownloadUrl];
-
+        
         [self queuePhotosForTagFromUrl:tagDownloadUrl];
     } 
 }
 
 -(void) queuePhotosForTagFromUrl:(NSURL *) url {
-
+    
     NSData *jsonData=[[(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager]  dataForURL:url];
     if (jsonData) {
         NSError *error=nil;
         NSObject *obj = [jsonData objectFromJSONDataWithParseOptions:(JKParseOptionComments | JKParseOptionLooseUnicode | JKParseOptionPermitTextAfterValidJSON | JKParseOptionUnicodeNewlines) error:&error];
         if (obj==nil) {
-            NSLog(@"Error parsing. Error was: %@",[error localizedDescription]);
             NSString *jsonString = [NSString stringWithUTF8String:[jsonData bytes]];
-            NSLog(@"Got JSON String %@",jsonString);
             //Try to remove bad escapes
             // This is slow and painful, but what else can you do?
-            //NSString *fixedJsonString=[jsonString stringByReplacingOccurrencesOfString:@"\\'" withString:@"'"];
             NSString *fixedJsonString=[jsonString stringByReplacingRegexPattern:@"\\\\(['])" withString:@"$1" caseInsensitive:NO treatAsOneLine:YES];
             obj = [fixedJsonString objectFromJSONStringWithParseOptions:(JKParseOptionComments | JKParseOptionLooseUnicode | JKParseOptionPermitTextAfterValidJSON | JKParseOptionUnicodeNewlines) error:&error];
-            NSLog(@"Got object %@",obj);
+            if (obj==nil) {
+                NSString *jsonString = [NSString stringWithUTF8String:[jsonData bytes]];
+                NSLog(@"Error from JSON String %@",jsonString);
+                NSLog(@"Error parsing. Error was: %@: %@",[error localizedDescription], [error userInfo]);
+            }
         }
         //NSLog(@"Got object %@",obj);
         if ([obj isKindOfClass:[NSDictionary class]]) {
@@ -63,7 +64,7 @@
                             NSLog(@"Found link: '%@'",link);
                             //This is the thumbnail URL, to make us take more bandwith (and thus test better)
                             //  use the full blown one
-
+                            
                             NSURL *urlToQueue = [NSURL URLWithString:[link stringByReplacingRegexPattern:@"_m\\." withString:@"."]];
                             if (urlToQueue) {                                
                                 [urlSet addObject:urlToQueue];
@@ -84,11 +85,11 @@
 
 -(void) queuePhotosForTagFromNotification:(NSNotification *) notification {
     if ([[notification name] isEqualToString:kImageDownloadComplete]) {
-
+        
         NSURL *url=[notification object];
         
         [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageDownloadComplete object:url];
-
+        
         [self queuePhotosForTagFromUrl:url];
     }
     
@@ -97,11 +98,14 @@
 -(void) convertURLSetToThumbnails:(NSOrderedSet *) urls {
     NSManagedObjectContext *context = [self managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Thumbnail" inManagedObjectContext:context];
-    NSMutableOrderedSet *newThumbnails = [[NSMutableOrderedSet alloc] init];
+    NSMutableSet *newThumbnails = [[NSMutableSet alloc] init];
+    int i=0;
     for (NSURL *url in urls) {
         Thumbnail *thumbnail = [[Thumbnail alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:context];
         [thumbnail setUrlString:[url absoluteString]];
+        [thumbnail setDisplayOrder:[NSNumber numberWithInt:i]];
         [newThumbnails addObject:thumbnail];
+        i++;
     }
     [self setThumbnails:newThumbnails];
     // Save the context.

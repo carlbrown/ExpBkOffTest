@@ -46,9 +46,9 @@
 		D387A88C14FD93F800C87719 /* ExpBkOffTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D387A88B14FD93F800C87719 /* ExpBkOffTestTests.m */; };
 		D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD5B1507019B002ABD70 /* JSONKit.m */; };
 		D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */; };
-		D3BFE27E15092D7F00D7ED10 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE27D15092D7F00D7ED10 /* Tag.m */; };
-		D3BFE2831509578600D7ED10 /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE2821509578600D7ED10 /* Thumbnail.m */; };
 		D3BFE2A1150966F600D7ED10 /* GridImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE2A0150966F600D7ED10 /* GridImageCell.m */; };
+		D3BFE2BA1509C24200D7ED10 /* Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE2B91509C24200D7ED10 /* Thumbnail.m */; };
+		D3BFE2BD1509C2E500D7ED10 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BFE2BC1509C2E500D7ED10 /* Tag.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,12 +128,12 @@
 		D397BD5B1507019B002ABD70 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = external/JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		D397BD891507B930002ABD70 /* NSString+PDRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PDRegex.h"; path = "external/RegexOnNSString/RegexOnNSString/NSString+PDRegex.h"; sourceTree = "<group>"; };
 		D397BD8A1507B930002ABD70 /* NSString+PDRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PDRegex.m"; path = "external/RegexOnNSString/RegexOnNSString/NSString+PDRegex.m"; sourceTree = "<group>"; };
-		D3BFE27C15092D7F00D7ED10 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tag.h; path = ../Tag.h; sourceTree = "<group>"; };
-		D3BFE27D15092D7F00D7ED10 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = Tag.m; path = ../Tag.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		D3BFE2811509578600D7ED10 /* Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thumbnail.h; sourceTree = "<group>"; };
-		D3BFE2821509578600D7ED10 /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thumbnail.m; sourceTree = "<group>"; };
 		D3BFE29F150966F600D7ED10 /* GridImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridImageCell.h; sourceTree = "<group>"; };
 		D3BFE2A0150966F600D7ED10 /* GridImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GridImageCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		D3BFE2B81509C24200D7ED10 /* Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thumbnail.h; sourceTree = "<group>"; };
+		D3BFE2B91509C24200D7ED10 /* Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thumbnail.m; sourceTree = "<group>"; };
+		D3BFE2BB1509C2E500D7ED10 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		D3BFE2BC1509C2E500D7ED10 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,10 +322,10 @@
 		D3BFE27F150933AB00D7ED10 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D3BFE27C15092D7F00D7ED10 /* Tag.h */,
-				D3BFE27D15092D7F00D7ED10 /* Tag.m */,
-				D3BFE2811509578600D7ED10 /* Thumbnail.h */,
-				D3BFE2821509578600D7ED10 /* Thumbnail.m */,
+				D3BFE2B81509C24200D7ED10 /* Thumbnail.h */,
+				D3BFE2B91509C24200D7ED10 /* Thumbnail.m */,
+				D3BFE2BB1509C2E500D7ED10 /* Tag.h */,
+				D3BFE2BC1509C2E500D7ED10 /* Tag.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -486,9 +486,9 @@
 				D37EB73C1501361200682DBD /* ZSURLConnectionDelegate.m in Sources */,
 				D397BD5C1507019B002ABD70 /* JSONKit.m in Sources */,
 				D397BD8B1507B930002ABD70 /* NSString+PDRegex.m in Sources */,
-				D3BFE27E15092D7F00D7ED10 /* Tag.m in Sources */,
-				D3BFE2831509578600D7ED10 /* Thumbnail.m in Sources */,
 				D3BFE2A1150966F600D7ED10 /* GridImageCell.m in Sources */,
+				D3BFE2BA1509C24200D7ED10 /* Thumbnail.m in Sources */,
+				D3BFE2BD1509C2E500D7ED10 /* Tag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
