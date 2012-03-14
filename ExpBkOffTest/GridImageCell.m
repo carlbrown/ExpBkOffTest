@@ -41,7 +41,7 @@
     NSString *ourURLString = [newThumbnail urlString];
     NSURL *ourURL = [NSURL URLWithString:ourURLString];
     //Register for asset manager to tell us if it changes
-    NSLog(@"Registering for notification for URL:%@",ourURL);
+    //NSLog(@"Registering for notification for URL:%@",ourURL);
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupImageView:) name:kImageDownloadComplete object:nil];
 
     ZSAssetManager *assetManager = [(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager];
@@ -69,13 +69,13 @@
     ZSAssetManager *am = [(AppDelegate *) [[UIApplication sharedApplication] delegate] assetManager];
     NSURL *ourURL = [NSURL URLWithString:[newThumbnail urlString]];
     if (![[notificationURL absoluteString] isEqualToString:[newThumbnail urlString]]) {
-        NSLog(@"Skipping notification for %@ instead of %@",[notificationURL absoluteString],[newThumbnail urlString]);
+        //NSLog(@"Skipping notification for %@ instead of %@",[notificationURL absoluteString],[newThumbnail urlString]);
         return;
     }
-    NSLog(@"Caught notification for URL:%@",ourURL);
+    //NSLog(@"Caught notification for URL:%@",ourURL);
     
     if (notificationURL != ourURL) {
-        NSLog(@"url %@ not equal to %@ but should be",notificationURL, ourURL);
+        //NSLog(@"url %@ not equal to %@ but should be",notificationURL, ourURL);
     }
 
     UIImage *image = [am imageForURL:ourURL];
@@ -100,7 +100,7 @@
         NSURL *ourURL = [NSURL URLWithString:ourURLString];
 
         if (ourURL) {
-            NSLog(@"Removing notification for URL:%@",ourURL);
+            //NSLog(@"Removing notification for URL:%@",ourURL);
 
             [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageDownloadComplete object:ourURL];
         }
