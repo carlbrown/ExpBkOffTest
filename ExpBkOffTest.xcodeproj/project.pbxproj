@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D33CDB61150FEC1000A39836 /* ZSBackoffHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CDB60150FEC1000A39836 /* ZSBackoffHandler.m */; };
 		D37EB71E150135CB00682DBD /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB708150135CB00682DBD /* AQGridView.m */; };
 		D37EB71F150135CB00682DBD /* AQGridViewAnimatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB70C150135CB00682DBD /* AQGridViewAnimatorItem.m */; };
 		D37EB720150135CB00682DBD /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D37EB70E150135CB00682DBD /* AQGridViewCell.m */; };
@@ -62,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D33CDB5F150FEC1000A39836 /* ZSBackoffHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZSBackoffHandler.h; path = external/ZDS_Shared/ZSBackoffHandler.h; sourceTree = "<group>"; };
+		D33CDB60150FEC1000A39836 /* ZSBackoffHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZSBackoffHandler.m; path = external/ZDS_Shared/ZSBackoffHandler.m; sourceTree = "<group>"; };
 		D37EB707150135CB00682DBD /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AQGridView.h; path = external/AQGridView/Classes/AQGridView.h; sourceTree = "<group>"; };
 		D37EB708150135CB00682DBD /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AQGridView.m; path = external/AQGridView/Classes/AQGridView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		D37EB709150135CB00682DBD /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AQGridView+CellLayout.h"; path = "external/AQGridView/Classes/AQGridView+CellLayout.h"; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 				D37EB7331501361200682DBD /* ZSReachability.m */,
 				D37EB7341501361200682DBD /* ZSURLConnectionDelegate.h */,
 				D37EB7351501361200682DBD /* ZSURLConnectionDelegate.m */,
+				D33CDB5F150FEC1000A39836 /* ZSBackoffHandler.h */,
+				D33CDB60150FEC1000A39836 /* ZSBackoffHandler.m */,
 			);
 			name = ZDS_Shared;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 				D3BFE2A1150966F600D7ED10 /* GridImageCell.m in Sources */,
 				D3BFE2BA1509C24200D7ED10 /* Thumbnail.m in Sources */,
 				D3BFE2BD1509C2E500D7ED10 /* Tag.m in Sources */,
+				D33CDB61150FEC1000A39836 /* ZSBackoffHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
